@@ -92,18 +92,9 @@ header .logolayout .logobooki {
     content: "";
     position: absolute;
     top: -7.6px;
-    left: 0;
     width: 100%;
     height: 2px;
     background-color: blue;
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-    flex-shrink: 0;
-  }
-
-  .button1:hover::before,
-  .button2:hover::before {
-    transform: scaleX(1); 
   }
   
   .button1:hover,
