@@ -328,6 +328,10 @@ nav {
 
 
 /*************** Footer *******************/
+.activityCardMain {
+    display: flex;
+    flex-direction: column;
+}
 
 footer {
     display: flex;
@@ -355,6 +359,7 @@ footer li {
     height: 10rem;
     padding: 1.25rem;
 }
+
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
