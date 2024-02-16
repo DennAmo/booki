@@ -301,7 +301,7 @@ nav {
 
 
 /************** activity *********************/
-.activity{
+.activity {
     margin-top: 1.88rem;
     padding: 1.875rem;
 }
@@ -309,7 +309,7 @@ nav {
 .activityCardMain {
     box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
     border-radius: 1.26rem 1.26rem 1.25rem 1.25rem;
-background: var(--White, #FFF);
+    background: var(--White, #FFF);
 
 }
 
@@ -333,10 +333,12 @@ footer {
     display: flex;
     background: var(--Grey, #F2F2F2);
 }
+
 footer h2 {
     margin-block-start: 0em;
     margin-block-end: 0em;
 }
+
 footer ul {
     list-style-type: none;
     margin-block-start: 0em;
@@ -348,7 +350,7 @@ footer li {
     padding-top: 0.93rem;
 }
 
-.footerContain{
+.footerContain {
     width: 29.9rem;
     height: 10rem;
     padding: 1.25rem;
