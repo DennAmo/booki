@@ -201,7 +201,7 @@ nav {
     width: 65%;
 }
 
-.plus {
+.hebergements h2 {
     margin: 0;
     font-size: 1.125rem;
     font-weight: 700;
@@ -236,7 +236,7 @@ nav {
 }
 
 .hebergements .card-rating {
-    margin-bottom: 5px;
+    margin-bottom: 0.94rem;
     margin-top: 0.5rem;
 }
 
@@ -335,7 +335,6 @@ nav {
 
 footer {
     display: flex;
-    background: var(--Grey, #F2F2F2);
 }
 
 footer h2 {
@@ -358,6 +357,7 @@ footer li {
     width: 29.9rem;
     height: 10rem;
     padding: 1.25rem;
+    background: var(--Grey, #F2F2F2);
 }
 
 
