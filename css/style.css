@@ -142,7 +142,7 @@ nav {
     font-weight: 700;
 }
 
-.filterBarLayout {
+.filterBar {
     display: flex;
     height: 3.125rem;
     align-items: center;
@@ -165,6 +165,11 @@ nav {
     font-weight: 700;
     line-height: normal;
 
+}
+
+.btnLayout{
+    display: flex;
+    gap: 0.94rem;
 }
 
 .filterBtn:hover {
@@ -396,9 +401,35 @@ footer li {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .activityCardMain {
+        width: 12rem;
+    }
+    .cardActivity {
+        width: 12rem;
+        height: 12.5rem;
+    }
+    .activity h2 {
+        padding-left: 1.19rem;
+        padding-right: 1.19rem;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+    }
+
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    main {
+        display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    }
+    header {
+        flex-direction: column;
+        align-items: center;
+      } 
+      .logoBooki{
+        padding: 1.875rem;
+      }
 }
