@@ -150,6 +150,7 @@ nav {
 }
 
 .filterBtn {
+    display: flex;
     height: 3.125rem;
     padding: 0.25rem 1.1875rem;
     align-items: center;
@@ -167,6 +168,7 @@ nav {
 }
 
 .btnLayout{
+    display: flex;
     gap: 0.94rem;
 }
 
@@ -179,7 +181,6 @@ nav {
     height: 1.5rem;
     align-items: center;
     gap: 0.625rem;
-    align-self: stretch;
     margin-bottom: 2.18rem;
 }
 
@@ -222,20 +223,16 @@ nav {
 .cardColumnOne {
     display: flex;
     padding-top: 1.88rem;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 30px;
 }
 
 .card-ContentMain {
     margin: 0rem 0.9375rem;
-    justify-content: space-between;
-    display: flex;
-    flex-direction: column;
 }
 
 .cardMain img {
-    width: 15.645rem;
-    height: 7.75rem;
+    width: 100%;
+    height: 100%;
 }
 
 .hebergements .card-rating {
@@ -305,7 +302,6 @@ nav {
 
 /************** activity *********************/
 .activity {
-    margin-top: 1.88rem;
     padding: 1.875rem;
 }
 
@@ -316,24 +312,23 @@ nav {
 
 }
 
-.activity h2 {
+.activity h3 {
     font-size: 1rem;
-    padding: 1.25rem;
-    margin-block-start: 0;
-    margin-block-end: 0;
+    padding-left: 19px;
+    height: 38px;
 }
-
 .activityLayout {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    gap: 30px;
 }
 
-
-/*************** Footer *******************/
 .activityCardMain {
     display: flex;
     flex-direction: column;
+}
+.cardActivity {
+    width: 100%;
 }
 
 footer {
@@ -400,13 +395,6 @@ footer li {
         font-size: 13px;
     }
 
-    .activityCardMain {
-        width: 12rem;
-    }
-    .cardActivity {
-        width: 12rem;
-        height: 12.5rem;
-    }
     .activity h2 {
         padding-left: 1.19rem;
         padding-right: 1.19rem;
@@ -432,5 +420,8 @@ footer li {
       }
       .hebergements-and-populaires{
         flex-direction: column-reverse;
+      }
+      .btnLayout {
+        flex-wrap: wrap;
       }
 }
