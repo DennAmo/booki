@@ -150,7 +150,6 @@ nav {
 }
 
 .filterBtn {
-    display: flex;
     height: 3.125rem;
     padding: 0.25rem 1.1875rem;
     align-items: center;
@@ -168,7 +167,6 @@ nav {
 }
 
 .btnLayout{
-    display: flex;
     gap: 0.94rem;
 }
 
@@ -431,5 +429,8 @@ footer li {
       } 
       .logoBooki{
         padding: 1.875rem;
+      }
+      .hebergements-and-populaires{
+        flex-direction: column-reverse;
       }
 }
