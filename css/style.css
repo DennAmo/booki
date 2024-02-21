@@ -65,8 +65,6 @@ nav {
 }
 
 .logoBooki {
-    width: 3.81813rem;
-    height: 1.1875rem;
     margin-bottom: 1.875rem;
     padding-top: 1.88rem;
 }
@@ -98,6 +96,7 @@ nav {
 
 /**************************
 
+
   /********** SearchModule *****************/
 
 .searchModuleLayout {
@@ -108,11 +107,8 @@ nav {
 
 .searchBar {
     display: flex;
-    width: 23.5625rem;
-    height: 3.0625rem;
     align-items: center;
     border-radius: 0.9375rem;
-    border: 1px solid var(--Grey, #F2F2F2);
     background: var(--White, #FFF);
 }
 
@@ -140,8 +136,6 @@ nav {
 
 .filterBar {
     display: flex;
-    height: 3.125rem;
-    align-items: center;
     gap: 0.9375rem;
 }
 
@@ -364,23 +358,12 @@ footer li {
         flex-direction: column;
     }
 
-    .hebergements {
+    .hebergements-and-populaires section {
         width: 100%;
     }
 
     .populaires {
-        width: 100%;
         margin-top: 50px;
-    }
-
-    .populaires-cards {
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-    }
-
-    .populaires-cards a {
-        width: 100%;
     }
 
     .populaires-cards .card-title {
@@ -402,11 +385,15 @@ footer li {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    
+    body {
+        display: block;
+    }
 
     main {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        min-width: 375px;
     }
 
     .main-container {
@@ -428,13 +415,17 @@ footer li {
         flex-direction: column;
     }
 
-    .searchModuleLayout {
-        align-items: center;
+
+    #btnSearchBarSubmit {
+        height: 49px;
+        width: 49px;
     }
 
     /********* hebergement populaires **********/
     .hebergements-and-populaires section {
         border-radius: 0px;
+        width: 100%;
+        min-width: 375px;
     }
 
     .hebergements-and-populaires {
@@ -444,21 +435,13 @@ footer li {
     .cardColumnOne {
         flex-direction: column;
     }
-
-    .btnLayout {
-        flex-wrap: wrap;
-    }
     
-    .populaires-cards {
-        flex-direction: column;
-    }
-    
-    .hebergements {
+    .hebergements-and-populaires section.hebergements {
         order: 1;
+        background-color: white;
     }
 
     .populaires {
-        width: 100%;
         padding-top: 0px;
     }
 
@@ -466,6 +449,13 @@ footer li {
 
    .activityLayout {
     flex-direction: column;
+    padding-bottom: 65px;
+   }
+
+   .activity {
+    width: 100%;
+    min-width: 375px;
+    padding: 0px;
    }
 
     /************ footer ************/
@@ -475,5 +465,6 @@ footer li {
 
     .footerContain {
             width: 100%;
+            min-width: 375px;
     }
 }
