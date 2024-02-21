@@ -19,7 +19,6 @@ body {
 }
 
 .main-container {
-    width: 100%;
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
@@ -59,12 +58,10 @@ a {
 header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
 }
 
 nav {
     display: flex;
-    align-items: flex-start;
 }
 
 .logoBooki {
@@ -106,7 +103,6 @@ nav {
 .searchModuleLayout {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 2.1875rem;
 }
 
@@ -167,7 +163,7 @@ nav {
 
 }
 
-.btnLayout{
+.btnLayout {
     display: flex;
     gap: 0.94rem;
 }
@@ -178,7 +174,6 @@ nav {
 
 .infoBar {
     display: flex;
-    height: 1.5rem;
     align-items: center;
     gap: 0.625rem;
     margin-bottom: 2.18rem;
@@ -317,6 +312,7 @@ nav {
     padding-left: 19px;
     height: 38px;
 }
+
 .activityLayout {
     display: flex;
     justify-content: space-between;
@@ -327,6 +323,7 @@ nav {
     display: flex;
     flex-direction: column;
 }
+
 .cardActivity {
     width: 100%;
 }
@@ -352,8 +349,7 @@ footer li {
 }
 
 .footerContain {
-    width: 29.9rem;
-    height: 10rem;
+    width: 33%;
     padding: 1.25rem;
     background: var(--Grey, #F2F2F2);
 }
@@ -380,11 +376,11 @@ footer li {
     .populaires-cards {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        gap: 20px;
     }
 
     .populaires-cards a {
-        width: 30%;
+        width: 100%;
     }
 
     .populaires-cards .card-title {
@@ -406,22 +402,83 @@ footer li {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    
+    /**** ???? *****/html {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }/**** ???? *****/
+
     main {
         display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+        flex-direction: column;
     }
+
+    .main-container {
+        padding: 0px;
+    }
+
+    /****** header *****/
     header {
         flex-direction: column;
         align-items: center;
-      } 
-      .logoBooki{
+    }
+
+    .logoBooki {
         padding: 1.875rem;
-      }
-      .hebergements-and-populaires{
-        flex-direction: column-reverse;
-      }
-      .btnLayout {
+    }
+
+    /****** search module *******/
+    .filterBar {
+        flex-direction: column;
+    }
+
+    .searchModuleLayout {
+        align-items: center;
+    }
+
+    /********* hebergement populaires **********/
+    .hebergements-and-populaires section {
+        border-radius: 0px;
+    }
+
+    .hebergements-and-populaires {
+        margin-bottom: 0px;
+    }
+
+    .cardColumnOne {
+        flex-direction: column;
+    }
+
+    .btnLayout {
         flex-wrap: wrap;
-      }
+    }
+    
+    .populaires-cards {
+        flex-direction: column;
+    }
+    
+    .hebergements {
+        order: 1;
+    }
+
+    .populaires {
+        width: 100%;
+        padding-top: 0px;
+    }
+
+   /**************** activity *********/
+
+   .activityLayout {
+    flex-direction: column;
+   }
+
+    /************ footer ************/
+    footer {
+        flex-direction: column;
+    }
+
+    .footerContain {
+            width: 100%;
+    }
 }
