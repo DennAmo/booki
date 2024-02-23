@@ -69,12 +69,14 @@ header {
     padding-top: 1.88rem;
 }
 
-.btnMenu1,
-.btnMenu2 {
+.btnMenu1 {
+    margin-right: 4.25rem;
+}
+
+.btnMenu1, .btnMenu2 {
     background-color: white;
     border-style: hidden;
     position: relative;
-    margin-left: 4.25rem;
 }
 
 
@@ -154,7 +156,7 @@ header {
 
 }
 
-.btnLayout {
+.btnLayout, .btnLayoutTwo {
     margin-left: 15px;
     display: flex;
     gap: 0.94rem;
@@ -384,23 +386,38 @@ footer li {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
+    /****** header *****/
     body {
         display: block;
         min-width: 375px;
-    }
-
-    .main-container {
-        padding: 0px 0px;
-    }
-
-    /****** header *****/
-    header {
-        flex-direction: column;
-        align-items: center;
+        margin: 0;
     }
 
     .logoBooki {
         padding: 1.875rem;
+    }
+
+    .btnMenu1, .btnMenu2 {
+        margin-right: 0rem;
+    }
+
+    header {
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-bottom: 1.075rem;
+    }
+
+    header img {
+        object-fit: scale-down;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .main-container {
+        padding: 0px 0px;
     }
 
     /****** search module *******/
@@ -416,6 +433,15 @@ footer li {
 
     .searchModuleLayout {
         align-items: center;
+    }
+
+    .btnLayout {
+        margin-bottom: 1.25rem;
+    }
+
+    .btnMenu1:hover::before,
+    .btnMenu2:hover::before {
+        top: 30px;
     }
 
     /********* hebergement populaires **********/
