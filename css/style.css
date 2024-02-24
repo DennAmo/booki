@@ -77,8 +77,6 @@ header {
     position: relative;
 }
 
-
-
 .btnMenu1:hover::before,
 .btnMenu2:hover::before {
     content: "";
@@ -432,11 +430,18 @@ footer li {
 
     .filterBar {
         flex-direction: column;
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
     }
 
     #btnSearchBarSubmit {
         height: 49px;
         width: 49px;
+        border-radius: 0.93rem 0.93rem 0.93rem 0.93rem;
+        background-image: url('../images/assets/loupe.png');
+        text-indent: -9999px;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     .searchModuleLayout {
@@ -454,6 +459,17 @@ footer li {
 
     .btnLayout {
         margin-bottom: 1.25rem;
+        margin-left: 0px;
+    }
+
+    .btnMenu1, .btnMenu2 {
+        width: 11.7rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .btnLayoutTwo {
+        margin-left: 0px;
     }
 
     .btnMenu1:hover::before,
