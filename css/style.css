@@ -383,14 +383,19 @@ footer li {
 
 }
 
+
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
     /****** header *****/
+
+    .main-container {
+        overflow-x: hidden;
+    }
+
     body {
-        display: block;
-        min-width: 375px;
         margin: 0;
+        display: block;
     }
 
     .logoBooki {
