@@ -528,11 +528,10 @@ footer li {
    .activityLayout {
     flex-direction: column;
     padding-bottom: 65px;
-    width: 42%;
+    align-items: center;
    }
 
    .activity {
-    width: 100%;
     padding: 1.88rem;
     display: flex;
     flex-direction: column;
