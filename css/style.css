@@ -19,11 +19,9 @@ body {
 }
 
 .main-container {
-    display: flex;
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
-    flex-direction: column;
 }
 
 a {
@@ -345,6 +343,10 @@ footer li {
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
 
+    body {
+        justify-content: unset;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -364,6 +366,7 @@ footer li {
 
     .populaires-cards .card {
         margin-top: 20px;
+        width: 20.9rem;
     }
 
     .populaires-cards .card-title {
@@ -440,6 +443,15 @@ footer li {
         align-items: center;
     }
 
+    .searchModuleLayout h1, h3, span {
+        padding-left: 1.25rem;
+    }
+
+    .infoBar {
+        padding-left: 1.25rem;
+        margin-bottom: 1.8rem;
+    }
+
     .btnLayout {
         margin-bottom: 1.25rem;
     }
@@ -453,21 +465,32 @@ footer li {
     .hebergements-and-populaires section {
         border-radius: 0px;
         width: 100%;
+        padding: 1.25rem;
+    }
+
+    .hebergements-and-populaires section.hebergements {
+        order: 1;
+        background-color: white;
     }
 
     .hebergements-and-populaires {
         margin-bottom: 0px;
     }
 
+    /***** hebergements ***********/
+    
+    .hebergements img {
+        width: 20.9rem;
+        object-fit: cover;
+    }
+
     .cardColumnOne {
         flex-direction: column;
         align-items: center;
     }
-    
-    .hebergements-and-populaires section.hebergements {
-        order: 1;
-        background-color: white;
-    }
+
+
+    /****** populaires *********/
 
     .populaires-cards {
         flex-direction: column;
@@ -476,19 +499,32 @@ footer li {
 
     .populaires {
         padding-top: 0px;
+        margin: 0rem;
     }
 
    /**************** activity *********/
 
+   .activityCardMain {
+    overflow: hidden;
+    width: 19.68rem;
+   }
+
    .activityLayout {
     flex-direction: column;
     padding-bottom: 65px;
-    align-items: center;
+    width: 42%;
    }
 
    .activity {
     width: 100%;
-    padding: 0px;
+    padding: 1.88rem;
+    display: flex;
+    flex-direction: column;
+   }
+   
+   .cardActivity {
+    height: 8.81rem;
+    object-fit: cover;
    }
 
     /************ footer ************/
