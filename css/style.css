@@ -9,10 +9,6 @@
     --filter-bg-color: #DEEBFF;
 }
 
-.fa-solid {
-    color: var(--main-color);
-}
-
 body {
     display: flex;
     justify-content: center;
@@ -34,25 +30,7 @@ a {
     font-size: 22px;
 }
 
-.card {
-    display: flex;
-    background-color: white;
-    border-radius: 20px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-}
 
-.card-title {
-    font-size: 16px;
-}
-
-.euro {
-    font-weight: 600;
-    font-size: 0.875rem;
-}
-
-.neutral-star {
-    color: var(--main-bg-color)
-}
 
 /*********** Header ***************/
 
@@ -61,24 +39,22 @@ header {
     justify-content: space-between;
 }
 
-
 .logoBooki {
     margin-bottom: 1.875rem;
     padding-top: 1.88rem;
 }
 
-.btnMenu1 {
-    margin-right: 4.25rem;
-}
-
-.btnMenu1, .btnMenu2 {
+nav > a {
     background-color: white;
     border-style: hidden;
     position: relative;
 }
 
-.btnMenu1:hover::before,
-.btnMenu2:hover::before {
+nav > a:first-child{
+    margin-right: 4.25rem;
+}
+
+nav > a:hover::before {
     content: "";
     position: absolute;
     top: -7.6px;
@@ -87,9 +63,8 @@ header {
     background-color: blue;
 }
 
-.btnMenu1:hover,
-.btnMenu2:hover {
-    color: blue;
+nav > a:hover {
+    border-color: blue;
 }
 
 /**************************
@@ -119,7 +94,7 @@ header {
     border: 1px solid #F2F2F2;
 }
 
-#btnSearchBarSubmit {  
+#btnSearchBarSubmit {
     height: 3.0625rem;
     border-radius: 0rem 0.9375rem 0.9375rem 0rem;
     border: 1px solid #0065FC;
@@ -131,9 +106,11 @@ header {
 
 .filterBar {
     display: flex;
+    align-items: center;
 }
 
 .filterBtn {
+cursor: pointer;
     min-width: 173px;
     display: flex;
     height: 3.125rem;
@@ -149,10 +126,10 @@ header {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-
 }
 
-.btnLayout, .btnLayoutTwo {
+.btnLayout,
+.btnLayoutTwo {
     margin-left: 15px;
     display: flex;
     gap: 0.94rem;
@@ -178,11 +155,36 @@ header {
     margin-bottom: 2.18rem;
 }
 
+
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
+}
+
+.card {
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card-title {
+    font-size: 16px;  
+}
+
+.fa-solid {
+    color: var(--main-color);
+}
+
+.euro {
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+.neutral-star {
+    color: var(--main-bg-color)
 }
 
 /****** Hebergements ***********/
@@ -203,8 +205,15 @@ header {
 }
 
 .cardColumnOne {
-    padding-bottom: 30px;
     padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.cardColumnTwo {
+    padding-bottom: 30px;
+}
+
+.cardColumnOne, .cardColumnTwo {
     display: flex;
     gap: 30px;
 }
@@ -215,7 +224,6 @@ header {
 
 .cardMain img {
     width: 100%;
-    height: 100%;
 }
 
 .hebergements .card-rating {
@@ -251,8 +259,7 @@ header {
 }
 
 .populaires-cards img {
-    width: 33%;
-    height: 136px;
+
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -330,7 +337,10 @@ footer li {
 
 .footerContain {
     width: 33%;
-    padding: 1.25rem;
+    padding-top: 20px;
+    padding-inline: 20px;
+    padding-bottom: 20px;
+
     background: var(--Grey, #F2F2F2);
 }
 
@@ -345,16 +355,24 @@ footer li {
         justify-content: unset;
     }
 
+    .main-container {
+        padding: 0 20px;
+    }
     .hebergements-and-populaires {
         flex-direction: column;
+        margin-bottom: 0;
     }
-
-    .hebergements-and-populaires section {
+    
+    .hebergements {
         width: 100%;
     }
-
     .populaires {
+        width: 100%;
         margin-top: 50px;
+    }
+
+    .hebergements-and-populaires a {
+        width: 100%;
     }
 
     .populaires-cards {
@@ -364,7 +382,6 @@ footer li {
 
     .populaires-cards .card {
         margin-top: 20px;
-        width: 20.9rem;
     }
 
     .populaires-cards .card-title {
@@ -376,10 +393,8 @@ footer li {
     }
 
     .activity h2 {
-        padding-left: 1.19rem;
-        padding-right: 1.19rem;
-        padding-top: 1.25rem;
-        padding-bottom: 1.25rem;
+        padding-bottom: 30px;
+        margin: 0;
     }
 
 }
@@ -401,10 +416,6 @@ footer li {
 
     .logoBooki {
         padding: 1.875rem;
-    }
-
-    .btnMenu1, .btnMenu2 {
-        margin-right: 0rem;
     }
 
     header {
@@ -446,10 +457,8 @@ footer li {
 
     .searchModuleLayout {
         align-items: center;
-    }
-
-    .searchModuleLayout h1, h3, span {
-        padding-left: 1.25rem;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .infoBar {
@@ -461,19 +470,26 @@ footer li {
         margin-bottom: 1.25rem;
         margin-left: 0px;
     }
-
-    .btnMenu1, .btnMenu2 {
+  
+    nav > a {
         width: 11.7rem;
         display: flex;
         justify-content: center;
+        margin-right: 0rem;
+        width: 100%;
+        border-bottom: solid 2px grey;
+        padding-bottom: 11px;
+    }
+
+    nav > a:first-child {
+        margin-right: 0rem;
     }
 
     .btnLayoutTwo {
         margin-left: 0px;
     }
 
-    .btnMenu1:hover::before,
-    .btnMenu2:hover::before {
+    nav > a:hover::before {
         top: 30px;
     }
 
@@ -494,13 +510,17 @@ footer li {
     }
 
     /***** hebergements ***********/
-    
+
     .hebergements img {
         width: 20.9rem;
         object-fit: cover;
     }
 
-    .cardColumnOne {
+    .hebergements-and-populaires a {
+        width: unset;
+    }
+
+    .cardColumnOne, .cardColumnTwo {
         flex-direction: column;
         align-items: center;
     }
@@ -518,29 +538,33 @@ footer li {
         margin: 0rem;
     }
 
-   /**************** activity *********/
+    .populaires a {
+        width: 100%;
+    }
 
-   .activityCardMain {
-    overflow: hidden;
-    width: 19.68rem;
-   }
+    /**************** activity *********/
 
-   .activityLayout {
-    flex-direction: column;
-    padding-bottom: 65px;
-    align-items: center;
-   }
+    .activityCardMain {
+        overflow: hidden;
+        width: 19.68rem;
+    }
 
-   .activity {
-    padding: 1.88rem;
-    display: flex;
-    flex-direction: column;
-   }
-   
-   .cardActivity {
-    height: 8.81rem;
-    object-fit: cover;
-   }
+    .activityLayout {
+        flex-direction: column;
+        padding-bottom: 65px;
+        align-items: center;
+    }
+
+    .activity {
+        padding: 1.88rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cardActivity {
+        height: 8.81rem;
+        object-fit: cover;
+    }
 
     /************ footer ************/
     footer {
@@ -548,16 +572,17 @@ footer li {
     }
 
     .footerContain {
-            width: 100%;
-            padding: 0px;
-            padding-top: 25px;
-            padding-bottom: 25px;
+        width: 100%;
+        padding: 0px;
+        padding-top: 25px;
+        padding-bottom: 25px;
     }
 
     .footerContain h2 {
         padding-left: 30px;
     }
+
     .footerContain ul {
-       padding-left: 30px;
+        padding-left: 30px;
     }
 }
