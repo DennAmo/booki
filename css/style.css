@@ -72,6 +72,12 @@ nav > a:hover {
 
   /********** SearchModule *****************/
 
+  .headline h1{
+    margin: 0;
+    margin-bottom: 8px;
+  }
+
+
 .searchModuleLayout {
     display: flex;
     flex-direction: column;
@@ -143,7 +149,7 @@ cursor: pointer;
     display: flex;
     align-items: center;
     gap: 0.625rem;
-    margin-bottom: 2.18rem;
+    margin-bottom: 35px;
 }
 
 /****************************
@@ -152,7 +158,7 @@ cursor: pointer;
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 2.18rem;
+    margin-bottom: 35px;
 }
 
 
@@ -194,8 +200,7 @@ cursor: pointer;
 
 .hebergements h2 {
     margin: 0;
-    font-size: 1.125rem;
-    font-weight: 700;
+    font-size: 22px;
 }
 
 .cardMain {
@@ -290,7 +295,12 @@ cursor: pointer;
 
 /************** activity *********************/
 .activity {
-    padding: 1.875rem;
+    padding: 30px;
+    margin-bottom: 35px;
+}
+
+.activity h2 {
+    margin-top: 0px;
 }
 
 .activityCardMain {
@@ -360,15 +370,16 @@ footer li {
     }
     .hebergements-and-populaires {
         flex-direction: column;
-        margin-bottom: 0;
+        margin-bottom: 35px;
+        gap: 50px;
     }
     
     .hebergements {
         width: 100%;
     }
+    
     .populaires {
         width: 100%;
-        margin-top: 50px;
     }
 
     .hebergements-and-populaires a {
@@ -512,7 +523,6 @@ footer li {
     /***** hebergements ***********/
 
     .hebergements img {
-        width: 20.9rem;
         object-fit: cover;
     }
 
