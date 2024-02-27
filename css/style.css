@@ -115,7 +115,7 @@ nav > a:hover {
 
 .filterBtn {
 cursor: pointer;
-    min-width: 173px;
+    min-width: 156px;
     display: flex;
     height: 3.125rem;
     padding: 0.25rem 1.1875rem;
