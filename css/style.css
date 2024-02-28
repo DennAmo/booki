@@ -113,7 +113,12 @@ nav > a:hover {
     align-items: center;
 }
 
+.filterBtn span {
+    all:initial;
+}
+
 .filterBtn {
+    white-space: nowrap;
 cursor: pointer;
     min-width: 156px;
     display: flex;
@@ -124,16 +129,9 @@ cursor: pointer;
     border-radius: 1.5625rem;
     border: 2px solid var(--Grey-Tint2, #D9D9D9);
     background-color: white;
-    color: var(--Black, #000);
-    font-family: Raleway;
-    font-size: 1.0625rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
 }
 
-.btnLayout,
-.btnLayoutTwo {
+.btnLayout {
     margin-left: 15px;
     display: flex;
     gap: 0.94rem;
@@ -463,6 +461,11 @@ footer li {
         flex-direction: column;
     }
 
+    #search-input {
+        border-right: none;
+        width: calc(100%);
+    }
+
     #btnSearchBarSubmit {
         height: 49px;
         width: 49px;
@@ -471,6 +474,7 @@ footer li {
         text-indent: -9999px;
         background-repeat: no-repeat;
         background-position: center;
+
     }
 
     .searchModuleLayout {
@@ -486,6 +490,20 @@ footer li {
     .btnLayout {
         margin-bottom: 1.25rem;
         margin-left: 0px;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 107%;
+
+    }
+
+    .filterBtn span {
+        white-space: nowrap;
+
+    }
+
+    .filterBtn svg {
+        width: 24px; 
+        height: 24px; 
     }
   
     nav > a {
@@ -502,10 +520,6 @@ footer li {
         margin-right: 0rem;
     }
 
-    .btnLayoutTwo {
-        margin-left: 0px;
-    }
-
     nav > a:hover::before {
         top: 30px;
     }
@@ -517,6 +531,10 @@ footer li {
         padding: 1.25rem;
     }
 
+    .hebergements a {
+        width: 100%;
+    }
+
     .hebergements-and-populaires section.hebergements {
         order: 1;
         background-color: white;
@@ -526,23 +544,11 @@ footer li {
         margin-bottom: 0px;
     }
 
-    /***** hebergements ***********/
-
-    .hebergements img {
-        object-fit: cover;
-    }
-
-    .hebergements-and-populaires a {
-        width: unset;
-    }
-
-    .cardColumnOne, .cardColumnTwo {
-        flex-direction: column;
-        align-items: center;
-    }
-
-
     /****** populaires *********/
+
+    .populaires a {
+        width: 100%
+    }
 
     .populaires-cards {
         flex-direction: column;
@@ -554,8 +560,8 @@ footer li {
         margin: 0rem;
     }
 
-    .populaires a {
-        width: 100%;
+    .cardMain img {
+        background-image: url(/images/hebergement/img1.jpg);
     }
 
     /**************** activity *********/
@@ -602,3 +608,4 @@ footer li {
         padding-left: 30px;
     }
 }
+
