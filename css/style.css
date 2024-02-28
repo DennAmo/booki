@@ -75,6 +75,7 @@ nav>a:hover {
 .headline h1 {
     margin: 0;
     margin-bottom: 8px;
+    font-size: 22px;
 }
 
 
@@ -88,6 +89,7 @@ nav>a:hover {
     border-radius: 15px;
     background: var(--White, #FFF);
     display: flex;
+    justify-content: center;
 }
 
 #search-input {
@@ -108,6 +110,11 @@ nav>a:hover {
     font-weight: 700;
 }
 
+.filterBar h2 {
+    margin: 0px;
+    font-size: 18px;
+}
+
 .filterBar {
     display: flex;
     align-items: center;
@@ -118,11 +125,10 @@ nav>a:hover {
 }
 
 .filterBtn {
-    white-space: nowrap;
     cursor: pointer;
-    min-width: 156px;
+    min-width: 133.4px;
     display: flex;
-    height: 3.125rem;
+    height: 50px;
     padding: 0.25rem 1.1875rem;
     align-items: center;
     gap: 0.625rem;
@@ -135,6 +141,7 @@ nav>a:hover {
     margin-left: 15px;
     display: flex;
     gap: 0.94rem;
+    justify-content: center;
 }
 
 .filterBtn:hover {
@@ -231,12 +238,11 @@ nav>a:hover {
 }
 
 .cardMain img {
-    background-repeat: no-repeat;
-    background-position: bottom;
+    object-position: bottom;
     border-radius: 1.25rem 1.25rem 0rem 0rem;
     height: 124px;
-    background-size: cover;
-    background-image: url(../images/hebergements/img1.jpg);
+    object-fit: cover;
+
 }
 
 .hebergements .card-rating {
@@ -343,7 +349,7 @@ footer {
     display: flex;
 }
 
-.footerContain h2 {
+.footerContain h4 {
     font-size: 18px;
     margin: 0;
 }
@@ -501,8 +507,12 @@ footer li {
         margin-left: 0px;
         flex-wrap: wrap;
         justify-content: center;
-        width: 107%;
+        min-width: 300px;
 
+    }
+
+    .filterBar h2 {
+        margin-bottom: 20px;
     }
 
     .filterBtn span {
@@ -510,9 +520,12 @@ footer li {
 
     }
 
+    .filterBtn {
+        width: 34%;
+    }
+
     .filterBtn svg {
-        width: 24px;
-        height: 24px;
+        min-width: 22px;
     }
 
     nav>a {
