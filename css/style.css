@@ -351,16 +351,11 @@ footer {
     margin: 0;
 }
 
-footer ul {
-    list-style-type: none;
-    margin-block-start: 0em;
-    margin-block-end: 0rem;
-    padding-inline-start: 0px;
+.footerLayout {
+    gap: 15px;
     width: 33%;
-}
-
-footer li {
-    padding-top: 0.93rem;
+    flex-direction: column;
+    display: flex;
 }
 
 .footerContain {
@@ -626,7 +621,7 @@ footer li {
         gap: 50px;
     }
 
-    .footerContain ul {
+    .footerLayout {
         padding-left: 30px;
         width: 100%;
     }
