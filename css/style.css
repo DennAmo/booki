@@ -44,17 +44,17 @@ header {
     padding-bottom: 50px;
 }
 
-nav > a {
+nav>a {
     background-color: white;
     border-style: hidden;
     position: relative;
 }
 
-nav > a:first-child{
+nav>a:first-child {
     margin-right: 68px;
 }
 
-nav > a:hover::before {
+nav>a:hover::before {
     content: "";
     position: absolute;
     top: -7.6px;
@@ -63,7 +63,7 @@ nav > a:hover::before {
     background-color: blue;
 }
 
-nav > a:hover {
+nav>a:hover {
     border-color: blue;
 }
 
@@ -72,10 +72,10 @@ nav > a:hover {
 
   /********** SearchModule *****************/
 
-  .headline h1{
+.headline h1 {
     margin: 0;
     margin-bottom: 8px;
-  }
+}
 
 
 .searchModuleLayout {
@@ -114,12 +114,12 @@ nav > a:hover {
 }
 
 .filterBtn span {
-    all:initial;
+    all: initial;
 }
 
 .filterBtn {
     white-space: nowrap;
-cursor: pointer;
+    cursor: pointer;
     min-width: 156px;
     display: flex;
     height: 3.125rem;
@@ -152,7 +152,7 @@ cursor: pointer;
 
 /****** Hebergements And Populaires ***********/
 
-.hebergements-and-populaires h3{
+.hebergements-and-populaires h3 {
     font-size: 14px;
 }
 
@@ -178,7 +178,7 @@ cursor: pointer;
 }
 
 .card-title {
-    font-size: 16px;  
+    font-size: 16px;
 }
 
 .fa-solid {
@@ -211,6 +211,8 @@ cursor: pointer;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
+    border: 5px solid;
+    border-color: white;
 }
 
 .hebergements a {
@@ -229,7 +231,12 @@ cursor: pointer;
 }
 
 .cardMain img {
-    height: 124px
+    background-repeat: no-repeat;
+    background-position: bottom;
+    border-radius: 1.25rem 1.25rem 0rem 0rem;
+    height: 124px;
+    background-size: cover;
+    background-image: url(../images/hebergements/img1.jpg);
 }
 
 .hebergements .card-rating {
@@ -336,9 +343,9 @@ footer {
     display: flex;
 }
 
-footer h2 {
-    margin-block-start: 0em;
-    margin-block-end: 0em;
+.footerContain h2 {
+    font-size: 18px;
+    margin: 0;
 }
 
 footer ul {
@@ -346,6 +353,7 @@ footer ul {
     margin-block-start: 0em;
     margin-block-end: 0rem;
     padding-inline-start: 0px;
+    width: 33%;
 }
 
 footer li {
@@ -353,11 +361,11 @@ footer li {
 }
 
 .footerContain {
-    width: 33%;
+    width: 100%;
     padding-top: 20px;
     padding-inline: 20px;
     padding-bottom: 20px;
-
+    display: flex;
     background: var(--Grey, #F2F2F2);
 }
 
@@ -375,16 +383,17 @@ footer li {
     .main-container {
         padding: 0 20px;
     }
+
     .hebergements-and-populaires {
         flex-direction: column;
         margin-bottom: 35px;
         gap: 50px;
     }
-    
+
     .hebergements {
         width: 100%;
     }
-    
+
     .populaires {
         width: 100%;
     }
@@ -502,11 +511,11 @@ footer li {
     }
 
     .filterBtn svg {
-        width: 24px; 
-        height: 24px; 
+        width: 24px;
+        height: 24px;
     }
-  
-    nav > a {
+
+    nav>a {
         width: 11.7rem;
         display: flex;
         justify-content: center;
@@ -516,11 +525,11 @@ footer li {
         padding-bottom: 11px;
     }
 
-    nav > a:first-child {
+    nav>a:first-child {
         margin-right: 0rem;
     }
 
-    nav > a:hover::before {
+    nav>a:hover::before {
         top: 30px;
     }
 
@@ -528,7 +537,7 @@ footer li {
     .hebergements-and-populaires section {
         border-radius: 0px;
         width: 100%;
-        padding: 1.25rem;
+        padding: 20px;
     }
 
     .hebergements a {
@@ -541,7 +550,7 @@ footer li {
     }
 
     .hebergements-and-populaires {
-        margin-bottom: 0px;
+        margin-bottom: 35px;
     }
 
     /****** populaires *********/
@@ -560,25 +569,22 @@ footer li {
         margin: 0rem;
     }
 
-    .cardMain img {
-        background-image: url(/images/hebergement/img1.jpg);
-    }
-
     /**************** activity *********/
 
     .activityCardMain {
         overflow: hidden;
-        width: 19.68rem;
+    }
+
+    .activity a {
+        width: 100%;
     }
 
     .activityLayout {
         flex-direction: column;
-        padding-bottom: 65px;
         align-items: center;
     }
 
     .activity {
-        padding: 1.88rem;
         display: flex;
         flex-direction: column;
     }
@@ -598,14 +604,12 @@ footer li {
         padding: 0px;
         padding-top: 25px;
         padding-bottom: 25px;
-    }
-
-    .footerContain h2 {
-        padding-left: 30px;
+        flex-direction: column;
+        gap: 50px;
     }
 
     .footerContain ul {
         padding-left: 30px;
+        width: 100%;
     }
 }
-
