@@ -564,7 +564,7 @@ footer li {
     }
 
     .cardMain {
-        object-position: ;
+        object-position: unset;
     }
 
     .cardColumnOne {
