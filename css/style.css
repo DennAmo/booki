@@ -518,7 +518,8 @@ footer li {
     }
 
     .filterBtn {
-        width:50%;
+        width: 40%;
+        min-width: 150px;
     }
 
     .filterBtn svg {
@@ -526,7 +527,6 @@ footer li {
     }
 
     nav>a {
-        width: 11.7rem;
         display: flex;
         justify-content: center;
         margin-right: 0rem;
