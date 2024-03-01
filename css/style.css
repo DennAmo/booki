@@ -89,7 +89,6 @@ nav>a:hover {
     border-radius: 15px;
     background: var(--White, #FFF);
     display: flex;
-    justify-content: center;
 }
 
 #search-input {
@@ -483,6 +482,10 @@ footer {
         border-right: none;
         width: calc(100%);
     }
+    
+    .searchBar {
+        justify-content: center;
+    }
 
     #btnSearchBarSubmit {
         height: 49px;
@@ -614,7 +617,7 @@ footer {
     }
 
     .cardActivity {
-        height: 8.81rem;
+        height: 124px;
         object-fit: cover;
     }
 
