@@ -78,11 +78,23 @@ nav>a:hover {
     font-size: 22px;
 }
 
-
 .searchModuleLayout {
     display: flex;
     flex-direction: column;
     gap: 35px;
+}
+
+.searchBar .fa-location-dot {
+    font-size: 20px;
+    color: black;
+    padding: 15px;
+}
+
+.dotLayout {
+    border-radius: 18px 0px 0px 18px;
+    height: 50px;
+    width: 50px;
+    background-color: #e6e6e6fa;
 }
 
 .searchBar {
@@ -154,6 +166,21 @@ nav>a:hover {
     margin-bottom: 35px;
 }
 
+.circle {
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border: 2px solid rgb(199, 197, 197);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle .fa-info {
+    color: #007bff;
+}
+
 /****************************
 
 /****** Hebergements And Populaires ***********/
@@ -220,7 +247,7 @@ nav>a:hover {
     width: 30%;
 }
 
-.cardColumnOne {
+.cardColumn {
     display: flex;
     padding-bottom: 30px;
     justify-content: space-between;
@@ -256,11 +283,16 @@ nav>a:hover {
     white-space: nowrap;
 }
 
-#hebergements p {
+.card-ContentMain p {
     margin-block-start: 0;
     margin-top: 0.5rem;
     margin-block-end: 0;
     font-size: 14px;
+}
+
+#hebergements>p {
+    font-size: 18px;
+    font-weight: 700;
 }
 
 /****** Populaires ***********/
@@ -432,6 +464,10 @@ footer {
         margin: 0;
     }
 
+    .cardActivity {
+        height: 200px;
+    }
+
 }
 
 
@@ -476,13 +512,14 @@ footer {
 
     .filterBar {
         flex-direction: column;
+        align-items: unset;
     }
 
     #search-input {
         border-right: none;
         width: calc(100%);
     }
-    
+
     .searchBar {
         justify-content: center;
     }
@@ -499,7 +536,6 @@ footer {
     }
 
     .searchModuleLayout {
-        align-items: center;
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -509,12 +545,10 @@ footer {
     }
 
     .btnLayout {
-        margin-bottom: 1.25rem;
         margin-left: 0px;
         flex-wrap: wrap;
-        justify-content: center;
-        min-width: 300px;
-
+        justify-content: space-between;
+        gap: 0px;
     }
 
     .filterBar h2 {
@@ -527,8 +561,8 @@ footer {
     }
 
     .filterBtn {
-        width: 40%;
-        min-width: 150px;
+        width: 46%;
+        margin-bottom: 1.25rem;
     }
 
     .filterBtn svg {
@@ -576,7 +610,7 @@ footer {
         object-position: unset;
     }
 
-    .cardColumnOne {
+    .cardColumn {
         flex-direction: column;
     }
 
