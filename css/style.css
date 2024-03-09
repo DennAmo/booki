@@ -132,7 +132,8 @@ nav>a:hover {
 }
 
 .filterBtn span {
-    all: initial;
+    font-size: 17px;
+    font-weight: 700;
 }
 
 .filterBtn {
